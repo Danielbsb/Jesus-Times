@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-title" content="Jesus Times">
+<title>Jesus Times</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f7f4ec;
+    --ink: #1a1a17;
+    --ink-soft: #4a4842;
+    --ink-faint: #8a877e;
+    --rule: #1a1a17;
+    --accent-bad: #7a1f1f;
+    --accent-good: #1f5c3a;
+    --accent-call: #1f4e8a;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #ddd8ca;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    font-family: 'PT Serif', Georgia, serif;
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    min-height: 100vh;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  a { color: inherit; text-decoration: none; }
+  .page {
+    width: 100%;
+    max-width: 480px;
+    background: var(--paper);
+    min-height: 100vh;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+  }
+  .masthead {
+    text-align: center;
+    padding: 22px 16px 14px;
+    border-bottom: 3px double var(--rule);
+  }
+  .masthead .logo {
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 15vw;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: 1px;
+  }
+  .masthead .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    color: var(--ink-faint);
+    margin-top: 8px;
+    padding-top: 6px;
+    border-top: 1px solid var(--ink-faint);
+    text-transform: uppercase;
+  }
+  .intro {
+    padding: 18px 20px 4px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    border-bottom: 1px solid var(--ink-faint);
+    padding-bottom: 18px;
+  }
+  .story {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid var(--ink-faint);
+  }
+  .story:active { background: rgba(0,0,0,0.03); }
+  .story .num {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .story h2 {
+    font-family: 'PT Serif', Georgia, serif;
+    font-weight: 700;
+    font-size: 6.5vw;
+    line-height: 1.15;
+    margin: 0 0 8px;
+  }
+  .story p.dek {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    margin: 0 0 10px;
+  }
+  .story .refs {
+    font-size: 11.5px;
+    color: var(--ink-faint);
+    letter-spacing: 0.2px;
+  }
+  .story .read {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: 12px;
+    display: inline-block;
+  }
+  .story .read::after { content: " →"; }
+
+  .story-1 .num, .story-1 .read { color: var(--accent-bad); }
+  .story-2 .num, .story-2 .read { color: var(--accent-good); }
+  .story-3 .num, .story-3 .read { color: var(--accent-call); }
+
+  .footer {
+    margin: 0 20px;
+    padding: 16px 0 24px;
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="masthead">
+      <div class="logo">Jesus Times</div>
+      <div class="meta">
+        <span>Edição especial</span>
+        <span>Três manchetes</span>
+      </div>
+    </div>
+
+    <p class="intro">O evangelho em três atos: o diagnóstico, a solução e o chamado a anunciá-la.</p>
+
+    <a class="story story-1" href="jesus-times.html">
+      <div class="num">Manchete 1 · Condenação</div>
+      <h2>Má notícia: há condenação</h2>
+      <p class="dek">A raça humana nasce sob culpa, e não há quem escape por mérito próprio.</p>
+      <div class="refs">Sl 51:5 · Rm 5:12 · Rm 3:23 · Rm 3:10-12</div>
+      <span class="read">Ler matéria completa</span>
+    </a>
+
+    <a class="story story-2" href="jesus-times-boa-noticia.html">
+      <div class="num">Manchete 2 · Esperança</div>
+      <h2>Boa notícia: há esperança!</h2>
+      <p class="dek">Onde a condenação alcançava a todos, a salvação chega igualmente a quem crê.</p>
+      <div class="refs">Lc 2:10-11 · Mt 1:21 · Jo 1:29 · Mc 10:45 · Jo 5:24 · Lc 15:7</div>
+      <span class="read">Ler matéria completa</span>
+    </a>
+
+    <a class="story story-3" href="jesus-times-anunciar.html">
+      <div class="num">Manchete 3 · Missão</div>
+      <h2>As boas notícias devem ser anunciadas!</h2>
+      <p class="dek">A ordem de Cristo e sua intercessão sustentam o chamado a levar essa mensagem adiante.</p>
+      <div class="refs">Mt 28:19-20 · Jo 17</div>
+      <span class="read">Ler matéria completa</span>
+    </a>
+
+    <div class="footer">Jesus Times · edição especial de doutrina</div>
+  </div>
+</body>
+</html>

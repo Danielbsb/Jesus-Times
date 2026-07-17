@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesus Times</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f7f4ec;
+    --ink: #1a1a17;
+    --ink-soft: #4a4842;
+    --ink-faint: #8a877e;
+    --rule: #1a1a17;
+    --accent: #7a1f1f;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #ddd8ca;
+  }
+  body {
+    font-family: 'PT Serif', Georgia, serif;
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    min-height: 100vh;
+  }
+  .page {
+    width: 100%;
+    max-width: 480px;
+    background: var(--paper);
+    min-height: 100vh;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+  }
+  .masthead {
+    text-align: center;
+    padding: 22px 16px 14px;
+    border-bottom: 3px double var(--rule);
+  }
+  .masthead .logo {
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 15vw;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: 1px;
+  }
+  .masthead .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    color: var(--ink-faint);
+    margin-top: 8px;
+    padding-top: 6px;
+    border-top: 1px solid var(--ink-faint);
+    text-transform: uppercase;
+  }
+
+  .kicker {
+    padding: 18px 20px 0;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+  }
+
+  h1 {
+    font-family: 'PT Serif', Georgia, serif;
+    font-weight: 700;
+    font-size: 9.5vw;
+    line-height: 1.08;
+    margin: 6px 20px 10px;
+    letter-spacing: -0.5px;
+  }
+
+  .dek {
+    margin: 0 20px 18px;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    border-bottom: 1px solid var(--ink-faint);
+    padding-bottom: 16px;
+  }
+
+  .body-text {
+    padding: 4px 20px 8px;
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--ink);
+    text-align: justify;
+  }
+
+  .body-text p {
+    margin: 0 0 14px;
+  }
+
+  .dropcap {
+    float: left;
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 46px;
+    line-height: 0.75;
+    padding: 4px 8px 0 0;
+    color: var(--ink);
+  }
+
+  .verse-ref {
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .footer {
+    margin: 10px 20px 0;
+    padding: 12px 0 24px;
+    border-top: 1px solid var(--ink-faint);
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.3px;
+  }
+
+  .rule-thin {
+    border: none;
+    border-top: 1px solid var(--ink-faint);
+    margin: 0 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="masthead">
+      <div class="logo">Jesus Times</div>
+      <div class="meta">
+        <span>Edição especial</span>
+        <span>Seção doutrina</span>
+      </div>
+    </div>
+
+    <p class="kicker">Boletim</p>
+    <h1>Má notícia:<br>há condenação</h1>
+    <p class="dek">A raça humana nasce sob culpa, e não há quem escape por mérito próprio, dizem as Escrituras.</p>
+
+    <div class="body-text">
+      <p><span class="dropcap">D</span>esde a concepção, afirma o salmista, já se carrega a marca da culpa: "eu nasci na iniquidade, e em pecado me concebeu minha mãe" (<span class="verse-ref">Sl 51.5</span>). Não é falha adquirida com o tempo, mas condição de nascença.</p>
+
+      <p>O apóstolo Paulo confirma o alcance universal do problema: por um só homem o pecado entrou no mundo, e pela transgressão, a morte se espalhou a toda a humanidade, "porque todos pecaram" (<span class="verse-ref">Rm 5.12</span>).</p>
+
+      <p>Não há exceção nem categoria isenta: "todos pecaram e destituídos estão da glória de Deus" (<span class="verse-ref">Rm 3.23</span>). A condição é geral, sem distinção de origem, mérito ou esforço pessoal.</p>
+
+      <p>Quanto à busca humana por retidão própria, o veredito é ainda mais duro: "não há justo, nem um sequer... não há quem faça o bem, não há nem um sequer" (<span class="verse-ref">Rm 3.10-12</span>).</p>
+    </div>
+
+    <hr class="rule-thin">
+    <div class="footer">
+      Fontes: Salmos 51:5 · Romanos 5:12 · Romanos 3:23 · Romanos 3:10-12
+    </div>
+  </div>
+</body>
+</html>
