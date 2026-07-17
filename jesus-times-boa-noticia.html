@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-title" content="Jesus Times">
+<title>Jesus Times</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f7f4ec;
+    --ink: #1a1a17;
+    --ink-soft: #4a4842;
+    --ink-faint: #8a877e;
+    --rule: #1a1a17;
+    --accent: #1f5c3a;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #ddd8ca;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    font-family: 'PT Serif', Georgia, serif;
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    min-height: 100vh;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .page {
+    width: 100%;
+    max-width: 480px;
+    background: var(--paper);
+    min-height: 100vh;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+  }
+  .masthead {
+    text-align: center;
+    padding: 22px 16px 14px;
+    border-bottom: 3px double var(--rule);
+  }
+  .masthead .logo {
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 15vw;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: 1px;
+  }
+  .masthead .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    color: var(--ink-faint);
+    margin-top: 8px;
+    padding-top: 6px;
+    border-top: 1px solid var(--ink-faint);
+    text-transform: uppercase;
+  }
+  .kicker {
+    padding: 18px 20px 0;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+  }
+  h1 {
+    font-family: 'PT Serif', Georgia, serif;
+    font-weight: 700;
+    font-size: 9vw;
+    line-height: 1.1;
+    margin: 6px 20px 10px;
+    letter-spacing: -0.5px;
+  }
+  .dek {
+    margin: 0 20px 18px;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    border-bottom: 1px solid var(--ink-faint);
+    padding-bottom: 16px;
+  }
+  .body-text {
+    padding: 4px 20px 8px;
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--ink);
+    text-align: justify;
+  }
+  .body-text p { margin: 0 0 14px; }
+  .dropcap {
+    float: left;
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 46px;
+    line-height: 0.75;
+    padding: 4px 8px 0 0;
+    color: var(--ink);
+  }
+  .verse-ref { font-weight: 700; color: var(--accent); }
+  .footer {
+    margin: 10px 20px 0;
+    padding: 12px 0 24px;
+    border-top: 1px solid var(--ink-faint);
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.3px;
+  }
+  .rule-thin { border: none; border-top: 1px solid var(--ink-faint); margin: 0 20px; }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="masthead">
+      <div class="logo">Jesus Times</div>
+      <div class="meta">
+        <span>Edição especial</span>
+        <span>Seção doutrina</span>
+      </div>
+    </div>
+
+    <p class="kicker">Boletim</p>
+    <h1>Boa notícia:<br>há esperança!</h1>
+    <p class="dek">Onde a condenação alcançava a todos, um anúncio de salvação chega igualmente a todos os que crêem.</p>
+
+    <div class="body-text">
+      <p><span class="dropcap">O</span> anjo trouxe aos pastores um anúncio de grande alegria "para todo o povo": nascera o Salvador, Cristo, o Senhor (<span class="verse-ref">Lc 2.10-11</span>). Seu próprio nome já carrega a missão: Jesus, "porque Ele salvará o Seu povo dos seus pecados" (<span class="verse-ref">Mt 1.21</span>).</p>
+
+      <p>João Batista o identifica com precisão: "Eis o Cordeiro de Deus, que tira o pecado do mundo" (<span class="verse-ref">Jo 1.29</span>). Ele não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos (<span class="verse-ref">Mc 10.45</span>).</p>
+
+      <p>A promessa é concreta para quem ouve e crê: quem crê tem a vida eterna e já passou da morte para a vida (<span class="verse-ref">Jo 5.24</span>).</p>
+
+      <p>E há alegria no céu por isso: mais júbilo por um pecador que se arrepende do que por noventa e nove que não precisam de arrependimento (<span class="verse-ref">Lc 15.7</span>).</p>
+    </div>
+
+    <hr class="rule-thin">
+    <div class="footer">
+      Fontes: Lucas 2:10-11 · Mateus 1:21 · João 1:29 · Marcos 10:45 · João 5:24 · Lucas 15:7
+    </div>
+  </div>
+</body>
+</html>
